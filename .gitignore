@@ -1,0 +1,11 @@
+# Ignore node_modules in subfolders
+client/node_modules/
+server/node_modules/
+
+# Editor settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
