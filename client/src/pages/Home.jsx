@@ -1,28 +1,21 @@
-import Button from "../components/Button";
+import Button from "../components/ui/Button";
 import React from "react";
-import Pattern from "../components/Pattern";
 
 const Home = () => {
   return (
-    <>
-      <Pattern>
-        <div className="flex flex-col h-screen justify-center items-center bg-[#0F0E0D] text-[#E8DCC4] px-4 text-center">
-          <h1 className="text-5xl font-semibold tracking-wide mb-4 text-[#E8DCC4]">
-            MansTalk
-          </h1>
+    <div className="h-screen w-full flex flex-col justify-center items-center text-[#E8DCC4] px-4 text-center bg-gradient-to-br from-[#1A1412] via-[#0F0E0D] to-[#2B211D]">
+      <h1 className="text-5xl font-semibold tracking-wide mb-4">MansTalk</h1>
 
-          <p className="text-lg max-w-xl mb-2 text-[#CFC4AA] leading-relaxed">
-            We talk about the conversations men keep hidden behind the silence.
-          </p>
+      <p className="text-lg max-w-xl mb-2 text-[#CFC4AA] leading-relaxed">
+        We talk about the conversations men keep hidden behind the silence.
+      </p>
 
-          <h4 className="text-md max-w-md mb-10 text-[#AFA48D]">
-            No judgement. No cringe. Just straight truth.
-          </h4>
+      <h4 className="text-md max-w-md mb-10 text-[#AFA48D]">
+        No judgement. No cringe. Just straight truth.
+      </h4>
 
-          <Button label="Let's Discuss" />
-        </div>
-      </Pattern>
-    </>
+      <Button label="lets discuss" />
+    </div>
   );
 };
 
