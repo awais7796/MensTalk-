@@ -1,8 +1,13 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Button = ({ label }) => {
+  const navigate = useNavigate();
+  const onClickHandle = () => {
+    navigate("/chat");
+  };
   return (
     <button
+      onClick={onClickHandle}
       className="
         cursor-pointer relative flex items-center px-6 py-3
         overflow-hidden font-medium transition-all
