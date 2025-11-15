@@ -37,8 +37,8 @@ const Chat = () => {
       </div>
 
       {/* CHAT AREA */}
-      <div className="flex-1 overflow-y-auto px-4 py-6 flex justify-center">
-        <div className="w-full max-w-2xl space-y-4">
+      <div className="bg-red-800 flex-1 overflow-y-auto px-4 py-6 flex justify-center">
+        <div className="bg-green-900 w-full max-w-2xl space-y-4">
           {/* Welcome area (only if 0 messages) */}
           {messages.length === 0 && (
             <div className="text-center mt-20">
@@ -83,6 +83,7 @@ const Chat = () => {
           <input
             type="text"
             value={message}
+            //getting input of users form here
             onChange={(e) => setMessage(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Type your message..."
